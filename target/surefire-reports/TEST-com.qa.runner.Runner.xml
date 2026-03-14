@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="321.978" tests="7" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\bin"/>
+    <property name="java.vm.version" value="25.472-b08"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Java_Workspace\BDDHyBridFrameworkJan2026"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Java_Workspace\BDDHyBridFrameworkJan2026"/>
+    <property name="java.runtime.version" value="1.8.0_472-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\pc\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="C:\Users\pc\Documents\JavaProject\Maven\apache-maven-3.9.11\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\bin;C:\Users\pc\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-24\bin;C:\Program Files\dotnet\;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\bin;C:\Users\pc\Documents\JavaProject\Maven\apache-maven-3.9.11\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;C:\Users\pc\AppData\Local\GitHubDesktop\bin;C:\Users\pc\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\Users\pc\Documents\JavaProject\Maven\apache-maven-3.9.11/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\pc\Documents\JavaProject\Maven\apache-maven-3.9.11\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\pc"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="pc"/>
+    <property name="java.class.path" value="C:\Users\pc\Documents\JavaProject\Maven\apache-maven-3.9.11\boot\plexus-classworlds-2.9.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_472"/>
+    <property name="java.ext.dirs" value="C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\resources.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\rt.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\sunrsasign.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\jsse.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\jce.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\charsets.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\lib\jfr.jar;C:\Users\pc\Documents\JavaProject\Java8\Java\jdk1.8.0_472\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="maven.home" value="C:\Users\pc\Documents\JavaProject\Maven\apache-maven-3.9.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Given Navigate to Claims after log in with Admin user" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0.011"/>
+  <testcase name="And I navigate to submit claims Page" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0"/>
+  <testcase name="When I crate claim Request with Event and Currency" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0"/>
+  <testcase name="When I add Expenses for the new claim Request with below fields and values" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0"/>
+  <testcase name="When I add Expenses for the new claim Request with below fields and values" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0"/>
+  <testcase name="Then I verify the total amount of all expenses is caculated correctly" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0.044">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+</error>
+    <system-out><![CDATA[Verifying total amount 
+Expected100.0
+There is some Exception in Fluent Wait checking--  no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-text oxd-text--p']"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-J6SGP4V', ip: '192.168.0.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_472'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60830}, goog:processID: 21612, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865fa34e65477b1ae3152576df24029a
+*** Element info: {Using=xpath, value=//p[@class='oxd-text oxd-text--p']}
+ Error on fetching  the text in element after wating !
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario: I am able to add, edit and Delete  Expenses and verify the total" classname="Scenario: I am able to add, edit and Delete  Expenses and verify the total" time="0.044">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+</error>
+  </testcase>
+</testsuite>

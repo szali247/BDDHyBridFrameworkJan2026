@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 321.978 sec <<< FAILURE! - in com.qa.runner.Runner
+Then I verify the total amount of all expenses is caculated correctly(Scenario: I am able to add, edit and Delete  Expenses and verify the total)  Time elapsed: 0.044 sec  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: I am able to add, edit and Delete  Expenses and verify the total  Time elapsed: 0.044 sec  <<< ERROR!
+java.lang.NullPointerException
+

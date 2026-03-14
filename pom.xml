@@ -105,7 +105,12 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-
+	<!-- Chrome WebDriverManager dependency -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.9.2</version> <!-- Ensure latest version for Chrome 145 support -->
+</dependency>
 	</dependencies>
 
 

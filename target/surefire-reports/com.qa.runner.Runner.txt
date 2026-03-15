@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.qa.runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 321.978 sec <<< FAILURE! - in com.qa.runner.Runner
-Then I verify the total amount of all expenses is caculated correctly(Scenario: I am able to add, edit and Delete  Expenses and verify the total)  Time elapsed: 0.044 sec  <<< ERROR!
-java.lang.NullPointerException
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 37.687 sec <<< FAILURE! - in com.qa.runner.Runner
+Then verify that comment time user and comment text is posted correctly as "OrangeHRM is very good software"(| OrangeHRM is very good software | 1 | sandip |)  Time elapsed: 0.012 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[sandip akolkar]> but was:<[Zulfi Shaik]>
 
-Scenario: I am able to add, edit and Delete  Expenses and verify the total  Time elapsed: 0.044 sec  <<< ERROR!
-java.lang.NullPointerException
+| OrangeHRM is very good software | 1 | sandip |  Time elapsed: 0.012 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[sandip akolkar]> but was:<[Zulfi Shaik]>
 

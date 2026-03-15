@@ -7,6 +7,7 @@ import java.util.HashMap;
 import com.qa.base.Base;
 import com.qa.pages.LoginPage;
 import com.qa.pages.PimPage;
+import com.qa.pages.ReportsPage;
 import com.qa.util.CaptureScreenshot;
 import com.qa.util.ReadProperties;
 import com.qa.util.WaitMethods;
@@ -25,6 +26,7 @@ public class EmployeeCRUDSteps extends Base{
 	Scenario scenario;
 	LoginPage objLoginPage;
 	PimPage objPimPage;
+	ReportsPage objReportsPage;
 	
 	@Before
 	public void StartApplications(Scenario scenario) {
@@ -100,6 +102,49 @@ scenario.write("Searhing the newly added emp ");
 		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
 	    
 	}
+	
+	// Reports CRUD Steps
+
+		@When("^I add Custom Report with below ReportName as \"([^\"]*)\" and below Display field group and field names$")
+		public void i_add_Custom_Report_with_below_ReportName_as_and_below_Display_field_group_and_field_names(
+				String reportName, DataTable reportFieldTable) throws Throwable {
+
+			scenario.write("Adding new Report ");
+			objReportsPage = new ReportsPage(driver, scenario);
+			objReportsPage.navigateToReportsPage();
+			objReportsPage.addNewReport(reportName);
+			WaitMethods.staticWait(5000, scenario);
+			scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
+
+		}
+
+		@Then("^I  verify Report is searched in the Report with ReportName as \"([^\"]*)\"$")
+		public void i_verify_Report_is_searched_in_the_Report_with_ReportName_as(String expectedreportName)
+				throws Throwable {
+
+			scenario.write("searching  new Report ");
+			Assert.assertEquals(expectedreportName, objReportsPage.searchReport(expectedreportName));
+			WaitMethods.staticWait(5000, scenario);
+			scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
+		}
+
+		@Then("^I verify the Report is generated with below fields$")
+		public void i_verify_the_Report_is_generated_with_below_fields(DataTable expectedFileldsTable) throws Throwable {
+			scenario.write("Verifying the Report fields  ");
+
+			HashMap<String, String> actualFieldMap = objReportsPage.getReportFields();
+
+			System.out.println(" actual field map values :" + actualFieldMap);
+
+			Assert.assertEquals(expectedFileldsTable.raw().get(0).get(1), actualFieldMap.get("firstField"));
+			Assert.assertEquals(expectedFileldsTable.raw().get(1).get(1), actualFieldMap.get("SecondField"));
+			Assert.assertEquals(expectedFileldsTable.raw().get(2).get(1), actualFieldMap.get("thirdField"));
+
+			WaitMethods.staticWait(5000, scenario);
+			scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
+		}
+
+		
 	
 	@After
 	public void closeApplication(){
